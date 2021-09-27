@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome}
+\usepackage{setspace}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Urmil Modi} \\ \vspace{1pt}
+    \small \faPhone {} 647-781-3884 $|$ \href{mailto:u.modi@mail.utoronto.ca}{\faEnvelope {} \underline{u.modi@mail.utoronto.ca}} $|$ 
+    \href{https://linkedin.com/in/urmilmodi}{\faLinkedin {} \underline{linkedin.com/in/urmilmodi}} $|$
+    \href{https://github.com/urmilmodi}{\faGithub {} \underline{github.com/urmilmodi}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {University of Toronto}{Sept. 2018 -- Apr. 2023 (expected)}
+            {BASc in Computer Engineering, Minor in Robotics and Mechatronics}{Toronto, ON}
+            \resumeItemListStart
+                \resumeItem{3rd Year, CGPA: 3.09/4.0}
+                \resumeItem{President's Entrance Scholarship (2018): \$15,000}
+                \resumeItem{Relevant coursework: 
+                    Software Design, 
+                    Networks, 
+                    Data Structures \& Algorithms, 
+                    Operating Systems, 
+                    Databases, 
+                    AI Fundamentals, 
+                    Computer Hardware, 
+                    Digital Systems, 
+                    Control Systems
+                    %Electric Fields and Magnetic Fields
+                    }
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+         \textbf{Languages}{: Python, C, C++, SQL (Postgres), Java, Bash, Verilog, ARM Assembly} \\
+         \textbf{Frameworks}{: Flask, Django, PyUnit, Selenium, Scrapy} \\
+         \textbf{Developer Tools}{: Git, Docker, AWS, Azure, VS Code, Vim, GDB, Quartus, Eclipse} \\
+         \textbf{Libraries}{: pandas, NumPy, Matplotlib, jsonschema} \\
+         %\textbf{Microcontrollers}{: Arduino, Raspberry Pi, DE1-Soc}
+        }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+
+% -----------Multiple Positions Heading-----------
+%        \resumeSubSubheading
+%            {Software Engineer I}{Oct 2014 - Sep 2016}
+%            \resumeItemListStart
+%                \resumeItem{Apache Beam}
+%                    {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%            \resumeItemListEnd
+%        \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+\section{Engineering Experience}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Analyticly Solutions}{Jan. 2021 -- Present}
+            {Backend Architect}{Remote}
+            \resumeItemListStart
+                \resumeItem{Deployed secure \textbf{Azure} architecture to migrate infrastructure from \textbf{AWS}.}
+                %{TODO: Using \textbf{Azure Function Apps}, \textbf{Service Bus}, \textbf{Blob Storage} and \textbf{Virtual Machines}.}
+                \resumeItem{Onboarded CI/CD using pipelines and Azure DevOps, reducing application deployment time by \textbf{$\approx$80\%}.}
+                \resumeItem{Developed a secure REST API using \textbf{Python}, \textbf{Azure SDK}, \textbf{Docker} and \textbf{PostgreSQL} for clients.}
+            \resumeItemListEnd
+
+        \resumeSubheading
+            {Orkestra Supply Chain Solutions}{May 2020 -- Aug. 2021}
+            {Software Engineer}{Remote}
+            \resumeItemListStart
+                \resumeItem{Connected 34 APIs of supply chain applications using \textbf{Python} to release 9 new business products.}
+                \resumeItem{Supported the internal team and performed platform maintenance with an average turnaround time of \textbf{$\approx$3 hours}, meeting SLA guidelines.}
+                \resumeItem{Collaborated with the Project Manager to improve business practices, streamline the development timeline, and migrate to an agile methodology, e.g. directed \textbf{85} core team pull requests enhancing code quality.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+            {University of Toronto Hyperloop Team (UTHT)}{Jun. 2019 -- Sept. 2021}
+            {Electronics Lead}{Toronto, ON}
+            \resumeItemListStart
+                \resumeItem{Developed a set of control system algorithms in \textbf{C++} for a Hyperloop pod to achieve autonomous navigation.}
+                \resumeItem{Conducted sensor tests, verified specifications, and wrote documentation, which reduced downtime by \textbf{$\approx$20\%}.}
+                \resumeItem{Led a new team of students \textit{virtually} from researching to manufacturing amid the COVID-19 pandemic.}
+                \resumeItem{Effectively utilized university resources to save \textbf{sales tax (13\%)} on ordered equipment.}
+            \resumeItemListEnd
+        
+        % \resumeSubheading
+        %     {IEEE University of Toronto Student Branch}{Apr. 2019 -- Sept. 2021}
+        %     {Tech Team Managing Director}{Toronto, ON}
+        %     \resumeItemListStart
+        %         \resumeItem{Implemented a surveillance system using a Raspberry Pi and Photon board to monitor
+        %         \textbf{$\approx$\$4000} in 
+        %         club inventory.}
+        %         \resumeItem{Developed \href{https://github.com/urmilmodi/Drum-HIEEEro}{Drum Hero} using \textbf{Pygame} and \textbf{OpenCV} to attract over 70 applicants.}
+        %         \resumeItem{Prepared the curriculum, tested electronics, and coordinated logistics to host live hardware workshops. }
+        %         \resumeItem{Revamped the 2021 flagship event to save thousands of dollars and increase brand awareness throughout North America.}
+        %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{\href{http://github.com/urmilmodi/The-Enigma-Machine}{Enigma Machine}} $|$ \emph{C++}}{}
+                \resumeItemListStart
+                    \resumeItem{Developed a CLI Enigma Machine, simulating the device from WWII, using the C++ STD library and object-oriented programming principles.}
+                \resumeItemListEnd
+        \resumeProjectHeading
+                {\textbf{\href{http://github.com/urmilmodi/VEX-RECON}{VEX Robotics Competition (VRC) Data Analysis Application}} $|$ \emph{Java, Spring Boot, Maven}}{}
+                \resumeItemListStart
+                    \resumeItem{Implemented a distributed version-control database without network access in Java to collect live competition data, improve productivity by 39\% and assist in winning 8 straight Tournament Championships.}
+                \resumeItemListEnd
+        \resumeProjectHeading
+                {\textbf{\href{https://github.com/urmilmodi/Pacman}{Pacman}} $|$ \emph{Verilog, VGA}}{}
+                \resumeItemListStart
+                    \resumeItem{Developed a Pacman game in Verilog with VGA graphics, modeled after the original release}
+                    \resumeItem{Optimized the design using pipelining to fulfill FPGA timing requirements.}
+                \resumeItemListEnd
+        \resumeProjectHeading
+                {\textbf{Digital Keypad Lock}    \emph{}}{}
+                \resumeItemListStart
+                    \resumeItem{Designed an Application Specific Digital Circuit (ASIC) using the \textbf{Proteus Design Suite}, ran functional simulations, and completed the hands-on PCB prototype bring-up.}
+                \resumeItemListEnd
+        % \resumeProjectHeading
+        %         {\textbf{\href{https://github.com/urmilmodi/Open-Street-Maps-GIS}{OpenStreetMap GIS}} $|$ \emph{C++}}{}
+        %         \resumeItemListStart
+        %             \resumeItem{Built a geographic information system (GIS) of different cities across the world, using the OpenStreetMap API.}
+        %             \resumeItem{Highly optimized the pathfinding algorithm in C++ to develop one of the fastest implementations in the class.}
+        %             \resumeItem{Ranked \textbf{12th} place in the class for solving a variation of the Travelling Salesman problem.}
+        %         \resumeItemListEnd
+        % \resumeProjectHeading
+        %         {\textbf{\href{http://github.com/urmilmodi/EZ-Chess-AI}{Chess AI}} $|$ \emph{Python}}{}
+        %         \resumeItemListStart
+        %             \resumeItem{Implemented a parallelized adaptation of the Mini-max Decision Algorithm, improving performance by 13\%.}
+        %         \resumeItemListEnd
+        % \resumeProjectHeading
+        %         {\textbf{\href{https://github.com/urmilmodi/ESC190/tree/master/Python/Assignments/B\%20-\%20Computational\%20Fluid\%20Dynamics}{Computational Fluid Dynamic Simulation}} $|$ \emph{Python}}{}
+        %         \resumeItemListStart
+        %             \resumeItem{Observed Burger's Equation in the action space with NumPy.}
+        %         \resumeItemListEnd
+        % \resumeProjectHeading
+        %         {\textbf{\href{https://github.com/urmilmodi/Announcement-Website}{Announcement Website}} $|$ \emph{JavaScript, jQuery, HTML, CSS}}{}
+        %         \resumeItemListStart
+        %             \resumeItem{Developed an announcement website to replace older high schools' speaker-based system, increasing the education period by \textbf{$\approx$4\%}.}
+        %         \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
